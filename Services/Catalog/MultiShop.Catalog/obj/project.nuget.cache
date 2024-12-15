@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G55BY9nQXW0=",
+  "dgSpecHash": "8LHSwfwpnV4=",
   "success": true,
-  "projectFilePath": "D:\\MultiShop\\Services\\Catalog\\MultiShop.Catalog\\MultiShop.Catalog.csproj",
+  "projectFilePath": "C:\\Users\\Huawei_\\source\\repos\\omerdumlupinar\\MultiShop\\Services\\Catalog\\MultiShop.Catalog\\MultiShop.Catalog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huawei_\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Huawei_\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
