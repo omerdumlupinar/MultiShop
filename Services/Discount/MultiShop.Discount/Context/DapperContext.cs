@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MultiShop.Discount.Entities;
 using System.Data;
 
-namespace MultiShop.Discount
+namespace MultiShop.Discount.Context
 {
     public class DapperContext : DbContext
     {
@@ -12,13 +12,12 @@ namespace MultiShop.Discount
         public DapperContext(IConfiguration configuration)
         {
             _configuration = configuration;
-            _connectionString = _configuration.GetConnectionString("DefaultConnection");
+            _connectionString = _configuration.GetConnectionString("DefaultConnectionString");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.;initial Catalog=MultiShopDiscountDb; intagrated Security=true;");
-
+            optionsBuilder.UseSqlServer("Server=.;Initial Catalog=MultiShopDiscountDb;Integrated Security=True;TrustServerCertificate=True;");
         }
 
         public DbSet<Coupon> Coupons { get; set; }
