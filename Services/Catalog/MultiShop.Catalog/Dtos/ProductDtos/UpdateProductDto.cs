@@ -2,11 +2,8 @@
 {
     public class UpdateProductDto
     {
-<<<<<<< HEAD
         public string ProductID { get; set; }
-=======
         public string ProductId { get; set; }
->>>>>>> 80a06ffd4e1c542db60c9b10add359602348c850
         public string ProductName { get; set; }
         public string ProductPrice { get; set; }
         public int ProductImageUrl { get; set; }

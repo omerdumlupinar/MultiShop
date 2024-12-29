@@ -1,12 +1,7 @@
 ﻿using AutoMapper;
 using MongoDB.Driver;
-<<<<<<< HEAD
-using MultiShop.Catalog.Dtos.ProductDetailDtos;
+using MultiShop.Catalog.Dtos.CategoryDtos;
 using MultiShop.Catalog.Dtos.ProductDtos;
-using MultiShop.Catalog.Dtos.ProductImageDtos;
-=======
-using MultiShop.Catalog.Dtos.ProductDtos;
->>>>>>> 80a06ffd4e1c542db60c9b10add359602348c850
 using MultiShop.Catalog.Entities;
 using MultiShop.Catalog.Settings;
 
@@ -26,7 +21,7 @@ namespace MultiShop.Catalog.Services.ProductService
             _mapper = mapper;
         }
 
-<<<<<<< HEAD
+
         public async Task CreateCategoryAsync(CreateProductDto createProductDto)
         {
             var addData=_mapper.Map<Product>(createProductDto);
@@ -53,32 +48,7 @@ namespace MultiShop.Catalog.Services.ProductService
         public async Task UpdateCategoryAsync(UpdateProductDto updateProductDto)
         {
             var updateData = _mapper.Map<Product>(updateProductDto);
-            await _productCollection.FindOneAndReplaceAsync(i => i.ProductID == updateProductDto.ProductID, updateData);
-=======
-        public Task CreateCategoryAsync(CreateProductDto createProductDto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task DeleteCategoryAsync(string id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<ResultProductDto>> GetAllCategoryAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<GetByIdProductDto> GetCategoryByIdAsync(string id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateCategoryAsync(UpdateProductDto updateProductDto)
-        {
-            throw new NotImplementedException();
->>>>>>> 80a06ffd4e1c542db60c9b10add359602348c850
+            await _productCollection.FindOneAndReplaceAsync(i => i.ProductID == updateProductDto.ProductID, updateData); 
         }
     }
 }

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 using Microsoft.Extensions.Options;
 using MultiShop.Catalog.Services.CategoryServices;
 using MultiShop.Catalog.Services.ProductDetailService;
@@ -23,11 +23,8 @@ builder.Services.AddScoped<IDatabaseSettings>(sp =>
 {
     return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
 });
-=======
-var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
->>>>>>> 80a06ffd4e1c542db60c9b10add359602348c850
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
